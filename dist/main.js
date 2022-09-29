@@ -26,8 +26,20 @@ function keretszinvalt(){
     kep.style.borderColor = String(ujszin);
 }
 
+function sotetgomb(){
+    document.body.style.backgroundColor = "black";
+    document.body.style.color = "white";
+}
+
+function fehergomb(){
+    document.body.style.backgroundColor = "white";
+    document.body.style.color = "black";
+}
+
 document.getElementById('kepnev').addEventListener('change', kepvalt);
 document.getElementById('szel').addEventListener('change', szelvalt);
 document.getElementById('mag').addEventListener('change', magvalt);
 document.getElementById('keretvastagsag').addEventListener('change', keretvalt);
 document.getElementById('keretszin').addEventListener('change', keretszinvalt);
+document.getElementById('sotetgomb').addEventListener('click', sotetgomb);
+document.getElementById('vilagosgomb').addEventListener('click', fehergomb);
